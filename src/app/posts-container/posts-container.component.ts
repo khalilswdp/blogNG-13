@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import {PostsService} from "../shared/posts.service";
 
 @Component({
   selector: 'app-posts-container',
-  template: `<h4>This is App Posts Container</h4>`,
-  styles: ['h4 {color: red}']
+  templateUrl: './posts-container.component.html',
+  styleUrls: ['./posts-container.component.css']
 })
 export class PostsContainerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private postsService: PostsService) { }
 
   ngOnInit(): void {
+    console.log(this.postsService.getName());
   }
 
 }

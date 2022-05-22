@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-posts-container',
-  templateUrl: './posts-container.component.html',
-  styleUrls: ['./posts-container.component.css']
+  template: `<h4>This is App Posts Container</h4>`,
+  styles: ['h4 {color: red}']
 })
 export class PostsContainerComponent implements OnInit {
 
